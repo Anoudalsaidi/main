@@ -1,0 +1,10 @@
+num = int(input("Input: "))
+ rem = []
+ while num != 0:
+ rem.append(num % 2) # 
+Record remainder of num divided by 2 
+num = num // 2 
+# Update num to quotient of num divided by 2
+# Join remainders to form binary string (reversed)
+binary = ''.join([str(y) for y in rem[::-1]]) 
+print("Output:", binary)
