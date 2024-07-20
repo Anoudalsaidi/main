@@ -1,0 +1,13 @@
+input_string = input("Enter the list of integers: ") 
+num = [int(i) for i in 
+input_string.split()] star= int(input("Enter start index:")) 
+end= int(input("Enter end index: ")) 
+j= [] 
+#squares of even numbers 
+for i in num: 
+if i%2 ==0: 
+#check if number is even 
+    j.append(i**2) 
+#sqaure print("List of squares of even numbers: ", j) 
+print("Sublist: ", num[star:end])
+
