@@ -1,0 +1,23 @@
+import re
+ name = input("Username: ")
+ password = input("Password: ")
+ email = input("Email: ")
+
+ # Check username
+ if not (name.strip() and len(name) <= 50): 
+print("Username is invalid")
+ else: print("Username is valid")
+
+ # Check password
+ if ( len(password) < 8 or re.search(r'[{}[\]\\|/?<>@#$%^&*()_!~:]', password) is None
+ or
+ not any(char.isdigit() for char in password) or
+ not any(char.islower() for char in password) or not any(char.isupper() for char in password)
+ ):
+ print("Password is invalid") 
+else: print("Password is valid")
+
+ # Check email 
+if re.match(r'^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7}$', email):
+ print("Email is valid")
+ else: print("Email is invalid")
