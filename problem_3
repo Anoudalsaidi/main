@@ -15,12 +15,12 @@ rows = int(input("Enter the number of lines: "))
        for j in range(i + 1): 
 print("1", end="") 
 print() 
-# Display Palindromic Triangle elif choice == '2': 
+# Display Palindromic Triangle elseif choice == '2': 
 rows = int(input("Enter the number of lines: ")) 
    for i in range(1, rows + 1): 
 print((pow(10, i) // 9) ** 2) 
 # Display help information 
-elif choice == '3': 
+elseif choice == '3': 
 print("Help:\n" 
 "A Palindromic Triangle is a triangular array of numbers where each row forms a palindrome.\n" 
 "The first few lines of a Palindromic Triangle are:\n" 
@@ -31,6 +31,6 @@ print("Help:\n"
 "1234321\n" 
 "You can use this pattern to draw a Palindromic Triangle for any number of lines.") 
 # Exit the loop 
-elif choice == '4': 
+elseif choice == '4': 
 print("Exiting the program") 
 break
